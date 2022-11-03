@@ -6,3 +6,13 @@ elseif amount_of_rain < 1# Add a second condition
 else    
     println("That's a lot of rain, stay home")
 end
+
+
+#Create function
+
+function fahrenheit2celsius(temp)
+    return (temp - 32) * 5/9
+    end
+temps_f = [212, 32, 100]
+# Broadcast function with dot syntax
+temps_c = fahrenheit2celsius.(temps_f)println(temps_c)
